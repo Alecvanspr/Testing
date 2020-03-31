@@ -50,6 +50,7 @@ public class Main extends Application {
         plus.relocate(100,30);
         min.relocate(100,60);
         uitkomst.relocate(300,30);
+        //lmao
 
         textveld2.onInputMethodTextChangedProperty();
 
