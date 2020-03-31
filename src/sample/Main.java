@@ -28,7 +28,7 @@ public class Main extends Application {
         stage1.setTitle("bruh");
         stage1.show();
 
-        // ff testen toch
+        // ff testen toc
 
     }
 
