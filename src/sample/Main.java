@@ -42,21 +42,21 @@ public class Main extends Application {
 
         //TextArea's
         texveld1.setPrefRowCount(4);
-        texveld1.setPrefColumnCount(5);
+        texveld1.setPrefColumnCount(9);
         textveld2.setPrefRowCount(4);
-        textveld2.setPrefColumnCount(5);
+        textveld2.setPrefColumnCount(9);
         uitkomst.setPrefRowCount(4);
         uitkomst.setPrefColumnCount(10);
         uitkomst.setFont(ComSan);
-        textveld2.relocate(100,0);
+        textveld2.relocate(120,0);
 
         //Buttons
         keer.setMinSize(30,10);
         plus.setMinSize(30,10);
         min.setMinSize(30,10);
-        keer.relocate(30,90);
-        plus.relocate(60,90);
-        min.relocate(90,90);
+        keer.relocate(0,90);
+        plus.relocate(93,90);
+        min.relocate(186,90);
         uitkomst.relocate(0,120);
 
         //these are the results
@@ -76,10 +76,11 @@ public class Main extends Application {
             uitkomst.setText("Het antwoord is : "+ (Getal1+Getal2)+"");
         });
 
+        //this is for the Pane
         Pane root = new Pane();
         root.getChildren().addAll(texveld1,textveld2,keer,plus,min,uitkomst);
 
-        final int PANE_WIDTH = 400;
+        final int PANE_WIDTH = 275;
         final int PANE_HEIGHT = 200;
         root.setMinSize(PANE_WIDTH,PANE_HEIGHT);
 
