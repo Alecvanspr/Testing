@@ -13,6 +13,7 @@ import javafx.scene.*;
 import org.w3c.dom.Text;
 
 import javax.swing.text.html.ImageView;
+import java.awt.event.ActionEvent;
 import java.security.spec.ECField;
 
 public class Main extends Application {
@@ -37,22 +38,41 @@ public class Main extends Application {
         TextArea texveld1 = new TextArea();
         TextArea textveld2 = new TextArea();
         TextArea uitkomst = new TextArea();
+        Font ComSan = new Font("Comic Sans MS",40);
 
-        texveld1.setPrefRowCount(5);
+        //TextArea's
+        texveld1.setPrefRowCount(4);
         texveld1.setPrefColumnCount(5);
-        textveld2.setPrefRowCount(5);
+        textveld2.setPrefRowCount(4);
         textveld2.setPrefColumnCount(5);
-        textveld2.relocate(130,0);
-        keer.setScaleX(1);keer.setScaleY(1);
-        plus.setScaleX(1);plus.setScaleY(1);
-        min.setScaleX(1);min.setScaleY(1);
-        keer.relocate(100,0);
-        plus.relocate(100,30);
-        min.relocate(100,60);
-        uitkomst.relocate(300,30);
-        //lmao
+        uitkomst.setPrefRowCount(4);
+        uitkomst.setPrefColumnCount(10);
+        uitkomst.setFont(ComSan);
+        textveld2.relocate(100,0);
 
-        textveld2.onInputMethodTextChangedProperty();
+        //Buttons
+        keer.setMinSize(30,10);
+        plus.setMinSize(30,10);
+        min.setMinSize(30,10);
+        keer.relocate(30,90);
+        plus.relocate(60,90);
+        min.relocate(90,90);
+        uitkomst.relocate(0,120);
+        keer.setOnAction(ActionEvent -> {
+            int Getal1 = Integer.parseInt(texveld1.getText());
+            int Getal2 = Integer.parseInt(textveld2.getText());
+                    uitkomst.setText(Getal1*Getal2+"");
+                });
+        min.setOnAction(ActionEvent -> {
+            int Getal1 = Integer.parseInt(texveld1.getText());
+            int Getal2 = Integer.parseInt(textveld2.getText());
+            uitkomst.setText(Getal1-Getal2+"");
+        });
+        plus.setOnAction(ActionEvent -> {
+            int Getal1 = Integer.parseInt(texveld1.getText());
+            int Getal2 = Integer.parseInt(textveld2.getText());
+            uitkomst.setText((Getal1+Getal2)+"");
+        });
 
         Pane root = new Pane();
         root.getChildren().addAll(texveld1,textveld2,keer,plus,min,uitkomst);
