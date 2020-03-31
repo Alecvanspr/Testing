@@ -35,10 +35,10 @@ public class Main extends Application {
         Button keer = new Button("*");
         Button plus = new Button("+");
         Button min = new Button("-");
-        TextArea texveld1 = new TextArea();
-        TextArea textveld2 = new TextArea();
-        TextArea uitkomst = new TextArea();
-        Font ComSan = new Font("Comic Sans MS",40);
+        TextArea texveld1 = new TextArea("0");
+        TextArea textveld2 = new TextArea("0");
+        TextArea uitkomst = new TextArea("Het antwoord is : ");
+        Font ComSan = new Font("Comic Sans MS",20);
 
         //TextArea's
         texveld1.setPrefRowCount(4);
@@ -58,20 +58,22 @@ public class Main extends Application {
         plus.relocate(60,90);
         min.relocate(90,90);
         uitkomst.relocate(0,120);
+
+        //these are the results
         keer.setOnAction(ActionEvent -> {
             int Getal1 = Integer.parseInt(texveld1.getText());
             int Getal2 = Integer.parseInt(textveld2.getText());
-                    uitkomst.setText(Getal1*Getal2+"");
+                    uitkomst.setText("Het antwoord is : "+(Getal1*Getal2+""));
                 });
         min.setOnAction(ActionEvent -> {
             int Getal1 = Integer.parseInt(texveld1.getText());
             int Getal2 = Integer.parseInt(textveld2.getText());
-            uitkomst.setText(Getal1-Getal2+"");
+            uitkomst.setText("Het antwoord is : "+ (Getal1-Getal2)+"");
         });
         plus.setOnAction(ActionEvent -> {
             int Getal1 = Integer.parseInt(texveld1.getText());
             int Getal2 = Integer.parseInt(textveld2.getText());
-            uitkomst.setText((Getal1+Getal2)+"");
+            uitkomst.setText("Het antwoord is : "+ (Getal1+Getal2)+"");
         });
 
         Pane root = new Pane();
