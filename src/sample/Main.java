@@ -48,7 +48,7 @@ public class Main extends Application {
         uitkomst.setPrefRowCount(4);
         uitkomst.setPrefColumnCount(10);
         uitkomst.setFont(ComSan);
-        textveld2.relocate(120,0);
+        textveld2.relocate(130,0);
 
         //Buttons
         keer.setMinSize(30,10);
