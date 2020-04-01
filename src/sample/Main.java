@@ -18,6 +18,12 @@ import java.security.spec.ECField;
 
 public class Main extends Application {
     public int lengter1 = 10;
+    public int Getal1;
+    public int Getal2;
+    public TextArea texveld1 = new TextArea("0");
+    public TextArea textveld2 = new TextArea("0");
+    public TextArea uitkomst = new TextArea("Het antwoord is : ");
+
     @Override
     public void start(Stage stage1) { //throws Exception
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -35,10 +41,7 @@ public class Main extends Application {
         Button keer = new Button("*");
         Button plus = new Button("+");
         Button min = new Button("-");
-        TextArea texveld1 = new TextArea("0");
-        TextArea textveld2 = new TextArea("0");
-        TextArea uitkomst = new TextArea("Het antwoord is : ");
-        Font ComSan = new Font("Comic Sans MS",20);
+        Font ComSan = new Font("Comic Sans MS", 20);
 
         //TextArea's
         texveld1.setPrefRowCount(4);
@@ -48,43 +51,43 @@ public class Main extends Application {
         uitkomst.setPrefRowCount(4);
         uitkomst.setPrefColumnCount(10);
         uitkomst.setFont(ComSan);
-        textveld2.relocate(130,0);
+        textveld2.relocate(130, 0);
 
         //Buttons
-        keer.setMinSize(30,10);
-        plus.setMinSize(30,10);
-        min.setMinSize(30,10);
-        keer.relocate(0,90);
-        plus.relocate(93,90);
-        min.relocate(186,90);
-        uitkomst.relocate(0,120);
+        keer.setMinSize(30, 10);
+        plus.setMinSize(30, 10);
+        min.setMinSize(30, 10);
+        keer.relocate(0, 90);
+        plus.relocate(93, 90);
+        min.relocate(186, 90);
+        uitkomst.relocate(0, 120);
 
         //these are the results
         keer.setOnAction(ActionEvent -> {
-            int Getal1 = Integer.parseInt(texveld1.getText());
-            int Getal2 = Integer.parseInt(textveld2.getText());
-                    uitkomst.setText("Het antwoord is : "+(Getal1*Getal2+""));
-                });
+            uitkomst.setText("Het antwoord is : " + (getGetal1() * getGetal2() + ""));
+        });
         min.setOnAction(ActionEvent -> {
-            int Getal1 = Integer.parseInt(texveld1.getText());
-            int Getal2 = Integer.parseInt(textveld2.getText());
-            uitkomst.setText("Het antwoord is : "+ (Getal1-Getal2)+"");
+            uitkomst.setText("Het antwoord is : " + (getGetal1() - getGetal2() + ""));
         });
         plus.setOnAction(ActionEvent -> {
-            int Getal1 = Integer.parseInt(texveld1.getText());
-            int Getal2 = Integer.parseInt(textveld2.getText());
-            uitkomst.setText("Het antwoord is : "+ (Getal1+Getal2)+"");
+            uitkomst.setText("Het antwoord is : " + (getGetal1() + getGetal2() + ""));
         });
 
         //this is for the Pane
         Pane root = new Pane();
-        root.getChildren().addAll(texveld1,textveld2,keer,plus,min,uitkomst);
+        root.getChildren().addAll(texveld1, textveld2, keer, plus, min, uitkomst);
 
         final int PANE_WIDTH = 275;
         final int PANE_HEIGHT = 200;
-        root.setMinSize(PANE_WIDTH,PANE_HEIGHT);
+        root.setMinSize(PANE_WIDTH, PANE_HEIGHT);
 
         return root;
+    }
+    public int getGetal1(){
+        return Getal1 = Integer.parseInt(texveld1.getText());
+    }
+    public int getGetal2(){
+        return Getal2 = Integer.parseInt(textveld2.getText());
     }
     public static void main(String[] args) {
         launch(args);
