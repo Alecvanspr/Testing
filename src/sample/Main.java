@@ -35,7 +35,7 @@ public class Main extends Application {
         stage1.setTitle("bruh");
         stage1.show();
 
-        // ff nieuwe test 1/4/2020 10:16
+        // ff nieuwe test 1/4/2020 10:19
 
     }
 
