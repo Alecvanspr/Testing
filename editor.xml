@@ -1,5 +1,6 @@
 <application>
   <component name="CodeInsightSettings">
     <EXCLUDED_PACKAGE NAME="javafx.scene.layout.Pane" />
+    <EXCLUDED_PACKAGE NAME="javafx.scene.layout.StackPane" />
   </component>
 </application>
