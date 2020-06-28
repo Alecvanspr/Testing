@@ -14,6 +14,10 @@
           <option name="url" value="https://github.com/clauben/Addressbook.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/itext/itext7.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\alecv\Downloads\junit4-master" />
