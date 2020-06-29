@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="IrregularVerbsInfinitive" type="PLAIN_TEXT" />
+      <mapping pattern="lol" type="PLAIN_TEXT" />
       <mapping pattern="IrregularVerbsPast" type="PLAIN_TEXT" />
       <mapping pattern="IrregularVerbsPastParticiple" type="PLAIN_TEXT" />
       <mapping ext="mp4" type="PLAIN_TEXT" />
