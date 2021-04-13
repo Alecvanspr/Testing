@@ -4,7 +4,10 @@
       <mapping pattern="bestand_2" type="AUTO_DETECTED" />
       <mapping pattern="2" type="AUTO_DETECTED" />
       <mapping pattern="1" type="AUTO_DETECTED" />
+      <mapping pattern="0_Template.txt" type="AUTO_DETECTED" />
+      <mapping pattern="0Template" type="AUTO_DETECTED" />
       <mapping pattern="3" type="AUTO_DETECTED" />
+      <mapping pattern="Template" type="AUTO_DETECTED" />
       <mapping pattern="UniqueDataFile" type="AUTO_DETECTED" />
       <mapping pattern="MaxArtsen" type="AUTO_DETECTED" />
       <mapping ext="gradle.kts" type="Kotlin" />
