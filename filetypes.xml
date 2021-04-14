@@ -4,6 +4,7 @@
       <mapping pattern="bestand_2" type="AUTO_DETECTED" />
       <mapping pattern="2" type="AUTO_DETECTED" />
       <mapping pattern="1" type="AUTO_DETECTED" />
+      <mapping pattern="BehandelingLog" type="AUTO_DETECTED" />
       <mapping pattern="0_Template.txt" type="AUTO_DETECTED" />
       <mapping pattern="MaxBehandelingen" type="AUTO_DETECTED" />
       <mapping pattern="0Template" type="AUTO_DETECTED" />
