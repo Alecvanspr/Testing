@@ -11,6 +11,7 @@
       <mapping pattern="MaxBehandelingen" type="AUTO_DETECTED" />
       <mapping pattern="0Template" type="AUTO_DETECTED" />
       <mapping pattern="3" type="AUTO_DETECTED" />
+      <mapping pattern="MaxTest.txt" type="AUTO_DETECTED" />
       <mapping pattern="Template" type="AUTO_DETECTED" />
       <mapping pattern="UniqueDataFile" type="AUTO_DETECTED" />
       <mapping pattern="MaxArtsen" type="AUTO_DETECTED" />
@@ -18,8 +19,8 @@
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="IrregularVerbsPastParticiple" type="PLAIN_TEXT" />
       <mapping pattern="IrregularVerbsPast" type="PLAIN_TEXT" />
-      <mapping pattern="IrregularVerbsInfinitive" type="PLAIN_TEXT" />
       <mapping pattern="lol" type="PLAIN_TEXT" />
+      <mapping pattern="IrregularVerbsInfinitive" type="PLAIN_TEXT" />
       <mapping ext="mp4" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="ignore" approved="true" type="IgnoreLang file" />
